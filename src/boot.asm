@@ -45,6 +45,9 @@
         lda #INITIAL_LINECAP_LINES_1
         sta linecapLines+1
 
+        lda #INITIAL_SCORING_MODIFIER
+        sta scoringModifier
+
         jsr resetScores
 
 .if SAVE_HIGHSCORES
